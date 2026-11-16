@@ -3,12 +3,7 @@ import device_image from './device.png';
 import google_play_badge from './google_play_badge.png';
 import appstore_badge from './appstore_badge.svg';
 import GAListener from './components/ga_listener';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect as LocalRedirect,
-} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import './App.css';
 
