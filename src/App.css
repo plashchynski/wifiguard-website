@@ -1,6 +1,41 @@
+/* Same colors as the top and bottom of the screenshot, so it blends in */
 html {
   color: white;
-  background-color: #39a8f3;
+  background-color: #45b3f3;
+  /* On narrow screens the image sits on top at full width (about 2.17x as tall) */
+  background-image: linear-gradient(#7ed7fc, #45b3f3);
+  background-repeat: no-repeat;
+  background-size: 100% 195vw;
+}
+
+/* Fade the image edges so any small color difference with the page is invisible */
+#device_image {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent),
+                      linear-gradient(to bottom, transparent, #000 3%, #000 97%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent),
+              linear-gradient(to bottom, transparent, #000 3%, #000 97%, transparent);
+  mask-composite: intersect;
+}
+
+@media (min-width: 601px) {
+  html {
+    background-size: 100% 100vh;
+  }
+
+  /* The screenshot fills the viewport height, flush with the page edges */
+  .container { width: 90%; }
+  .container > .row { margin-bottom: 0; }
+  .container > .row > .col { padding-top: 0; padding-bottom: 0; }
+
+  #device_image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    object-fit: contain;
+  }
 }
 
 #title {

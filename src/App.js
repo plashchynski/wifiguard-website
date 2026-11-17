@@ -15,7 +15,7 @@ class App extends Component {
           <div className="container">
             <div className="row">
               <div className="col s12 m6 l6 text-s-center">
-                <img className="responsive-img" src={device_image} alt="WiFi Guard screen" />
+                <img id="device_image" className="responsive-img" src={device_image} alt="WiFi Guard screen" />
               </div>
               <div className="col s12 m6 l6">
                 <div className="section hide-on-small-only"></div>
