@@ -19,11 +19,15 @@ html {
 }
 
 @media (min-width: 601px) {
+  /* The image is the original screenshot (full height = 100vh) minus the top
+     16.74% that held the caption. Keep the phone the same size by pushing the
+     image down by that amount and giving the page the original full gradient. */
   html {
+    background-image: linear-gradient(#7ed7fc, #45b3f3);
     background-size: 100% 100vh;
   }
 
-  /* The screenshot fills the viewport height, flush with the page edges */
+  /* The screenshot sits flush with the bottom of the viewport */
   .container { width: 90%; }
   .container > .row { margin-bottom: 0; }
   .container > .row > .col { padding-top: 0; padding-bottom: 0; }
@@ -32,8 +36,8 @@ html {
     display: block;
     width: auto;
     max-width: 100%;
-    height: 100vh;
-    margin: 0 auto;
+    height: 83.26vh;
+    margin: 16.74vh auto 0;
     object-fit: contain;
   }
 }
