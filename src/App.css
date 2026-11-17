@@ -1,11 +1,11 @@
 /* Same colors as the top and bottom of the screenshot, so it blends in */
 html {
   color: white;
-  background-color: #45b3f3;
-  /* On narrow screens the image sits on top at full width (about 2.17x as tall) */
-  background-image: linear-gradient(#7ed7fc, #45b3f3);
+  background-color: #45b2f3;
+  /* On narrow screens the image sits on top at full width (about 1.8x as tall) */
+  background-image: linear-gradient(#74d1fb, #45b2f3);
   background-repeat: no-repeat;
-  background-size: 100% 195vw;
+  background-size: 100% 165vw;
 }
 
 /* Fade the image edges so any small color difference with the page is invisible */
