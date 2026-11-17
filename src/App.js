@@ -39,17 +39,7 @@ class App extends Component {
                 </div>
                 <div className="row">
                   <div className="col s12">
-                    Available for Android, iPhone, iPad, Apple TV, and Apple Watch
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col s12 text-s-center">
-                    <div className="flow-text">
-                      Follow us:
-                      <a className="flow-text" href="https://www.facebook.com/wifiguard" title="WiFi Guard Facebook Page">
-                        <ion-icon id="facebook_logo" name="logo-facebook" size="large"></ion-icon>
-                      </a>
-                    </div>
+                    Available for Android, iPhone, iPad, and Apple TV
                   </div>
                 </div>
               </div>

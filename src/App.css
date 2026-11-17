@@ -32,10 +32,3 @@ html {
   .text-s-justify { text-align: justify; }
 }
 
-#facebook_logo {
-  font-size: 30px;
-  color: white;
-  margin-left: 10px;
-  position: relative;
-  top: 6px;
-}
